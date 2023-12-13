@@ -1,0 +1,177 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>想做播客。 | 愛的博客</title>
+<link rel="shortcut icon" href="https://mizimo.github.io/favicon.ico?v=1702494752090">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://mizimo.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="想做播客。 | 愛的博客 - Atom Feed" href="https://mizimo.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="其實一直都有想做播客的念頭..但我的思維方式總是太碎片化、沒辦法支撐起完整的表述。
+因此一拖再拖。
+在備忘錄、社群平台上用文字碎碎念早就成為習慣了。
+對我來講音訊和文字最大的不同在於——它帶有自我的身體覺知，就像人類喜歡照鏡子、自拍。其實會..." />
+    <meta name="keywords" content="情緒化發言" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://mizimo.github.io">
+  <img class="avatar" src="https://mizimo.github.io/images/avatar.png?v=1702494752090" alt="">
+  </a>
+  <h1 class="site-title">
+    愛的博客
+  </h1>
+  <p class="site-description">
+    愛是唯一的解藥。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="https://mizimo.github.io" class="menu">
+          首頁
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          文檔
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          分類
+        </a>
+      
+    
+      
+        <a href="https://mizimo.github.io/about" class="menu">
+          更多
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              想做播客。
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-12-14
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://mizimo.github.io/C1xbDHJb3/" class="post-tag">
+                  # 情緒化發言
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>其實一直都有想做播客的念頭..但我的思維方式總是太碎片化、沒辦法支撐起完整的表述。<br>
+因此一拖再拖。</p>
+<p>在備忘錄、社群平台上用文字碎碎念早就成為習慣了。<br>
+對我來講音訊和文字最大的不同在於——它帶有自我的身體覺知，就像人類喜歡照鏡子、自拍。其實會帶有某種對自我身分、自我形象的探索與建立。</p>
+<p>觀察自己的相片、聽見自己聲音的體驗，也許本身就是成長歷程之一。</p>
+<p>我也不知道該怎樣結束第一篇碎碎念，儘管連自己是否能活到25歲都不清楚，卻還是鼓勵自己自信一點，莫名其妙。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://mizimo.github.io/QL_UfVCfb/">
+              <h3 class="post-title">
+                莉可麗絲！
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  請記得清除瀏覽器「快取資料」，否則將無法加載新文章。
+  <a class="rss" href="https://mizimo.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
